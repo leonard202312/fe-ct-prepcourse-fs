@@ -157,7 +157,7 @@ function doWhile(num) {
    // Tu código:
    let n =8;
    let res= 0;
-   do {n--- res = num+5 }while (n>0)
+   do {n=n-1 res; Number+5 }while (n>0)
    return res
 }
 
