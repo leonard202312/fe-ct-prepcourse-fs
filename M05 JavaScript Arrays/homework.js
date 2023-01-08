@@ -102,28 +102,62 @@ function multiplicarArgumentos() {
    
 }
 
-function cuentoElementos(array) {
+{
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
    // Tu código:
-}return num.lengh (num>18) 
+   var acumulador=0;
+   for(var i =0;i<arreglo.lengh;i++){
+      if(arreglo[i]>18){
+         acumulador +=1
+      }
+   }
+}
 
 function diaDeLaSemana(numeroDeDia) {
    // Supongamos que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente.
    // Realiza una función que, dado el número del día de la semana, retorne: "Es fin de semana"
    // si el día corresponde a "Sábado" o "Domingo", y "Es dia laboral" en caso contrario.
    // Tu código:
+   if(numeroDeDia===1||numeroDeDia===7){
+      return "Es fin de semana"
+
+   }else if(numeroDeDia>1&&numeroDeDia<7){
+      return "Es dia laboral"
+   }
+
 }
 
 function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
    // Debe retornar True si el entero inicia con 9 y False en otro caso.
    // Tu código:
+  const array = [1,12,13,94,23]
+  const isGreaterThankFour = array.some(num=>num[0]==="9")
+  return true
+ 
+
+  const ilessThanTen = array.some(num=>num[0]!=="9")
+  return false
+ 
 }
 
 function todosIguales(array) {
    // Si todos los elementos del arreglo son iguales, retornar True.
    // Caso contrario retornar False.
    // Tu código:
+     const array=[1,2,3,4,5,6,7,8]
+  
+     {const isGreaterThankFour = array. every (elementos===elementos)
+  
+     return true
+   
+  
+    const ilessThanTen = array.every (elementos !==elementos)
+    
+    return false
+    console.log ( "islessThanTen" )
+
+
 }
 
 function mesesDelAño(array) {
@@ -190,4 +224,4 @@ module.exports = {
    mayorACien,
    breakStatement,
    continueStatement,
-};
+} 
