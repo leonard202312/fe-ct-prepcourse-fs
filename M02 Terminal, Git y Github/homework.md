@@ -10,7 +10,7 @@
    -  Si usas Linux, tal vez necesites instalar git accediendo a tu terminal e ingresado `apt-get install git`
    -  Si tienes problemas instalando Git, este [**recurso**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) puede servir de ayuda.
 
----
+---listo
 
 </br >
 

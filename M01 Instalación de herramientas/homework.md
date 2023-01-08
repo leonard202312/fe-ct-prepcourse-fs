@@ -34,7 +34,7 @@ No es obligatorio que desacargues este aplicación en tu computadora, pero te se
 
 [**LINK DE DESACRGA**](https://slack.com/intl/es-ar/downloads/windows)
 
----
+---listo
 
 </br >
 
