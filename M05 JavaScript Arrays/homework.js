@@ -3,7 +3,10 @@
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:[4,7,9]
-   return[0]
+   const array = []
+   const resultArray = array.Indexof(0)
+
+   return[0];
 }
 
 function devolverUltimoElemento(array) {
@@ -153,9 +156,7 @@ function todosIguales(array) {
    
   
     const ilessThanTen = array.every (elementos !==elementos)
-    
-    return false
-    console.log ( "islessThanTen" )
+    return falso
 
 
 }
@@ -165,6 +166,19 @@ function mesesDelAño(array) {
    // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
+   var arraysolucion = [];
+   for(var i = 0 ;i <array.length ;i++){
+      if(array[i]==="Enero"|| array[i]==="Marzo"|| array[i]==="Marzo"){
+         arrayResultado.push(array[i]);
+
+      }
+   }
+   if (arrayResultado.length===3){
+      return arrayResultado;
+      {
+         return"No se encontraron los meses pedidos"
+      }
+   }
 }
 
 function tablaDelSeis() {
