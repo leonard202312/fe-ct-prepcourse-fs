@@ -3,8 +3,7 @@
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:[4,7,9]
-   const array = []
-   const resultArray = array.Indexof(0)
+   
 
    return[0];
 }
@@ -26,11 +25,14 @@ function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:[4,5,6,7,9]
-   let array2= []
-   for(let i=0;i<array.length;i++)
-   array2(i)=array(i)+1 
-   return array2
+   var array2 = [];
+   for(var i=0;i<array.length;i++){
+   array2.push(array[i]+1) 
+   }
+   return array2;
 }
+
+
 
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
@@ -185,12 +187,26 @@ function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
+   var array = [];
+   for(var i = 0 ; i < 11 ; i++ ){
+    array.push(i*6)};
+   }
+   return array;
+
 }
 
 function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+
+   var nuevoarray=[]
+   for (var i = 0; i< array.length ; i++){
+      if(array[i] > 100){
+         nuevoarray.push(array[i])
+      }
+   }
+   return nuevoarray;
 }
 
 /* ----------------------------------------------------------------------------------
@@ -204,7 +220,27 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
-}
+   var arrayelements = []
+   var suma = numero;
+   for(var i=0;i<10;i++){
+      suma = suma +2;
+      if(suma===i){
+         break;
+      }else{
+            arrayelements.push(suma);
+      }
+
+      }
+      if(arrayelements.lengh<10){
+         return "Se interrumpió la ejecución";
+
+      }else if(arrayelements.length===10){
+        
+         return arrayelements ; 
+
+      }
+   }
+
 
 function continueStatement(num) {
    // Iterar en un bucle aumentando en 2 el número recibido hasta un límite de 10 veces.
@@ -213,6 +249,16 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+   var arrayaprendiendo = []
+   var suma = num ;
+   for(var i = 0 ;i < 10 ; i++){
+      if(i===5){
+      continue;
+      }else
+      suma = suma +2;
+      arrayaprendiendo.push(suma);
+   }
+   return arrayaprendiendo; 
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
