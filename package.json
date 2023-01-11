@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/leonard202312/fe-ct-prepcourse-fs/issues"
   },
-  "homepage": "https://github.com/leonard202312/fe-ct-prepcourse-fs#readme"
+  "homepage": "https://github.com/leonard202312/fe-ct-prepcourse-fs#readme",
+  "devDependencies": {}
 }
