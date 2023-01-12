@@ -5,9 +5,16 @@ function obtenerMayor(x, y) {
    // Retornar el número más grande.
    // Si son iguales, retornar cualquiera de los dos.
    // Tu código:
-   2<23<
-
-   ( x>y ? x : y)
+   //2<23<
+   if(x>y){
+      return x;
+     } else if (y>x){
+      return y;
+     }else{
+      return x || y ;
+   
+     }
+ 
  }
 
 function mayoriaDeEdad(edad) {
@@ -15,7 +22,7 @@ function mayoriaDeEdad(edad) {
    // Si tiene 18 años ó más debe retornar el string: "Allowed".
    // Caso contrario: "Not allowed".
    // Tu código:
-   return edad >=18 ? "Allowed" : "Not allowed"
+   return edad >=18 ? "Allowed" : "Not allowed";
 }
 
 function conection(status) {
@@ -30,7 +37,7 @@ function conection(status) {
    return "Offline"
    case 2 :
       return "Away"
-      default: return "Offline"}
+      default: return "Offline"};
    }
 
 function saludo(idioma) {
@@ -47,7 +54,7 @@ function saludo(idioma) {
       return "Ni Hao!"
       case 3: "ingles"
       return "Hello!"
-      default: return "in"}
+      default: return "in"};
 }
 
 function colors(color) {
@@ -68,7 +75,7 @@ function colors(color) {
       return "This is green"
       case 4: "orange"
       return "This is orange"
-      default: return "Color not found"}
+      default: return "Color not found"};
 
 
 }
@@ -77,14 +84,15 @@ function esDiezOCinco(num) {
    // Retornar "true" si "num" es 10 o 5.
    // De lo contrario, retornar "false".
    // Tu código:
-   if( num===10||num===5)return true; return false
-}
+   
 
+
+}
 function estaEnRango(num) {
    // Retornar "true" si "num" es menor que 50 y mayor que 20.
    // De lo contrario, retornar "false".
    // Tu código:
-   if(num<50 && num>20)return true ; return false
+   if(num<50 && num>20)return true ; return false; 
 }
 
 function esEntero(num) {
@@ -141,14 +149,14 @@ function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
-   return valor ? "Soy verdadero" : "Soy falso" 
+   return valor ? "Soy verdadero" : "Soy falso" ;
 }
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar True.
    // Caso contrario, retornar False.
    // Tu código:
-   return String(num). length===3
+   return String(num). length===3 ;
 }
 
 function doWhile(num) {
@@ -157,9 +165,9 @@ function doWhile(num) {
    // Utilizar el bucle Do-While.
    // Tu código:
    let n =8;
-   let res= 0;
-   do {n=n-1 res; Number+5 }while (n>0)
-   return res
+   let resultado = 0;
+   do {n=n-1 ; resultado; Number+5 }while (n>0)
+   return resultado ;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
