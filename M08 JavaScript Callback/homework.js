@@ -30,10 +30,10 @@ function sumarArray(arrayOfNumbers, cb) {
    // Este resultado debes pasárselo como argumento al callback recibido.
    // [NOTA]: no debes reotrnar nada.
    // Tu código:
-   var sumamar = numeros.reduce(function(ac,ele){}
+   var arratOfNumebers = numeros.reduce(function(ac,ele){}
    
-   );
-   cb(sumamar);
+   )
+   cb(arratOfNumebers);
 }
 
 function forEach(array, cb) {
@@ -54,13 +54,25 @@ function map(array, cb) {
    // Tiene que guardar el resultado devuelto por el callback en cada elemento dentro de un nuevo arreglo.
    // Retorna el nuevo arreglo.
    // Tu código:
+   var arrayNuevo = array.map(function(ele){
+      return cb(ele)
+   })
+   return arrayNuevo; 
 }
 
 function filter(arrayOfStrings) {
    // Debes identificar todos los elementos el arreglo que comiencen con la letra "a".
    // Luego retorna un nuevo arreglo con estos elementos.
    // Tu código:
-}
+   return array.filter(function(str){
+      return str[0] === "a";
+   });
+
+   }
+
+
+
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
