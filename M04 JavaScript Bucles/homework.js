@@ -32,14 +32,15 @@ function conection(status) {
    // De lo contrario, presumimos que el usuario está "Offline".
    // Retornar el estado de conexión del usuario.
    // Tu código:
-   switch(status)
-   {case 1 : 
-   return "Offline"
-   case 2 :
-      return "Away"
-      default: return "Offline"};
-   }
-
+  if(status ===1){
+    return "Online" ;
+      }else if(status===2){
+         return "Away";
+          }else {
+            return "Offline";
+          }
+   
+}
 function saludo(idioma) {
    // Retornar un saludo en tres diferentes lenguajes:
    // Si "idioma" es "aleman", devuelve "Guten Tag!".
@@ -47,14 +48,16 @@ function saludo(idioma) {
    // Si "idioma" es "ingles", devuelve "Hello!".
    // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
    // Tu código:
-   switch(idioma)
-   {case 1: "aleman"
-   return "Guten Tag"
-   case 2: "mandarin"
-      return "Ni Hao!"
-      case 3: "ingles"
-      return "Hello!"
-      default: return "in"};
+   if(idioma === "aleman"){ 
+     return  "Guten Tag!";
+       }else if(idioma === "mandarin"){
+         return "Ni Hao!";
+         }else if(idioma=== "ingles"){
+            return "Hello!";
+         }else{
+            return "Hola!";
+         }
+   
 }
 
 function colors(color) {
