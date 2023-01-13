@@ -89,7 +89,11 @@ function esDiezOCinco(num) {
    // Retornar "true" si "num" es 10 o 5.
    // De lo contrario, retornar "false".
    // Tu código:
-
+      if(num===10||num===5){
+         return true ;
+      }else{
+         return false ;
+      }
    
 
 
@@ -133,7 +137,7 @@ function operadoresLogicos(num1, num2, num3) {
    // Tu código:
    if(num1>num2&&num1>num2)return "Numero 1 es mayor y positivo"
    if(num1<0||num3<0||num2<0)return "Hay negativos"
-   if(num3>num1&&num3>num2)return nm3 +1 
+   if(num3>num1&&num3>num2)return num3 +1 
    if(num1===0||num3===0||num2===0)return "Error"
    return false
 }
@@ -145,24 +149,37 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   if(num===0||num===1)return false
-   if(num===2||num===3||num===5||num===7)return false
-   if(num%2===0|| num %3=== 0|| num%5=== 0|| num%7 === 0 )
-   return false;
+   if(num===2){
+    return true;
+   }else if(num<2){
+      return false;
+   }for(var i= 2 ; i < num; i ++){
+      if (num %i===0){
+         return false;
+      }
+   }
+            return true ;
 }
-
 function esVerdadero(valor) {
-   // Si "valor" es verdadero retornar "Soy verdadero".
+   // Si "valor" es  ret retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
-   return valor ? "Soy verdadero" : "Soy falso" ;
+  if (valor === "True"){
+   return  "Soy verdadero";
+  }else{
+   return "Soy falso" ;
+  }
 }
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar True.
    // Caso contrario, retornar False.
    // Tu código:
-   return String(num). length===3 ;
+   if(num.length===3){
+      return true ; 
+      
+   }
+   
 }
 
 function doWhile(num) {
