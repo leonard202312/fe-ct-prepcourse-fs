@@ -14,8 +14,8 @@ function deObjetoAarray(objeto) {
       arreglo.push([key[i],objeto[key[i]]]); 
    }
    return arreglo ; 
-
 }
+
 
 function numberOfCharacters(string) {
    // La función recibe un string. Debes recorrerlo y retornar un objeto donde cada propiedad es una de las
@@ -33,6 +33,7 @@ function numberOfCharacters(string) {
    
 }
 return objeto ; 
+
 }
 
 function capToFront(string) {
@@ -41,6 +42,16 @@ function capToFront(string) {
    // Retornar el string.
    // [EJEMPLO]: soyHENRY ---> HENRYsoy
    // Tu código:
+   var mayúscula = "";
+   var minusculas ="";
+   for(var i =0 ; i < s.length;i++){
+      if(s[i] === s[i]toLewerCase()){
+         minusculas = minusculas s[i]
+       }else{
+         mayúscula = mayúscula + s[i]
+       }
+   }
+            return mayúscula minusculas;
 }
 
 function asAmirror(frase) {
