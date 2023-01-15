@@ -6,14 +6,20 @@ function deObjetoAarray(objeto) {
    // Estos elementos debe ser cada par clave:valor del objeto recibido.
    // [EJEMPLO]: {D: 1, B: 2, C: 3} ---> [['D', 1], ['B', 2], ['C', 3]].
    // Tu código:
-   var arreglo = []
-   var key = [] 
-   key = Object.keys(objeto)
-
-   for(var i = 0 ; key.length;i++){
-      arreglo.push([key[i],objeto[key[i]]]); 
+   var matriz = [];
+   for(prop in objeto){
+      matriz.push([prop, objeto[pro]])
    }
-   return arreglo ; 
+               return matriz
+   
+   //var arreglo = []
+   //var key = [] 
+   //key = Object.keys(objeto)
+
+   //for(var i = 0 ; key.length;i++){
+     // arreglo.push([key[i],objeto[key[i]]]); 
+   //}
+   //return arreglo ; 
 }
 
 
@@ -26,13 +32,13 @@ function numberOfCharacters(string) {
    var objeto ={};
     for(var i = 0 ; i< string.length;i++){
       if(objeto.hasOwnProperty(string[i])){
-         objeto[string[i]] = [string[i]] + 1; 
+         objeto[string[i]] = [string[i]] + 1 
    }else{
-      objeto [string[i]] = 1;
+      objeto [string[i]] = 1
   }
    
-}
-return objeto ; 
+};
+return objeto  
 
 }
 
@@ -71,7 +77,12 @@ function capicua(numero) {
    // Si el número que recibes es capicúa debes retornar el string: "Es capicua".
    // Caso contrario: "No es capicua".
    // Tu código:
-}
+   var número ();
+   if(var número === capicúa ){
+      return "Es capicua";
+   }else¨{
+      return "No es capicua";
+   }
 
 function deleteAbc(string) {
    // Tu tarea es eliminar las letras "a", "b" y "c" del string recibido.
