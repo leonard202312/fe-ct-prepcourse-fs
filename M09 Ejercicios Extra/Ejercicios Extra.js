@@ -42,6 +42,7 @@ function capToFront(string) {
    // Retornar el string.
    // [EJEMPLO]: soyHENRY ---> HENRYsoy
    // Tu código:
+  
    var mayúscula = "";
    var minusculas ="";
    for(var i =0 ; i < s.length;i++){
@@ -59,6 +60,11 @@ function asAmirror(frase) {
    // La diferencia es que cada palabra estará escrita al inverso.
    // [EJEMPLO]: "The Henry Challenge is close!"  ---> "ehT yrneH egnellahC si !esolc"
    // Tu código:
+   var strToArray = str.split(" ")
+   var arrayFinal = strToArray.map(function(elemento){
+      return elemento.split("").reverse().join("");
+   })
+   return arrayFinal.join(" ");
 }
 
 function capicua(numero) {
