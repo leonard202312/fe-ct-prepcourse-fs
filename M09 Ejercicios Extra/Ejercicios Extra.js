@@ -102,11 +102,9 @@ function deleteAbc(string) {
    // Tu tarea es eliminar las letras "a", "b" y "c" del string recibido.
    // Retorna el string sin estas letras.
    // Tu código:
-   var str (a,b,c,d,e,f,g,h)
-   var newstring = str.slice(1,-3)
-   return str ;
-
-
+   var versionModificada cadena.split("").filter((e)=> e !== "a"&& e !== "b"&& e "c").join(" ")
+   
+   return versionModificada
 
 
 
@@ -115,10 +113,14 @@ function deleteAbc(string) {
 
 function sortArray(arrayOfStrings) {
    // Recibes un arreglo de strings.
+
    // Debe retornar un nuevo arreglo, pero con las palabras ordenadas en orden creciente a partir
    // de la longitud de cada string.
    // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
    // Tu código:
+   return array.sort(function(a,b){
+      return a.length - b.length 
+   })
 }
 
 function buscoInterseccion(array1, array2) {
@@ -128,6 +130,13 @@ function buscoInterseccion(array1, array2) {
    // Si no tienen elementos en común, retornar un arreglo vacío.
    // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
    // Tu código:
+   let newarreglo = []
+   for(let i = 0; i < array1.length;i++)¨{
+      if(array2.includes(array1[i])){
+         newarreglo.push(array1[i])
+      }
+   }
+   return newarreglo;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
